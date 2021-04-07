@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --magenta : hsl(300, 69%, 71%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--violet);
+}
+
+@media screen and (max-width:375px){
+    .container {
+        position: absolute;
+        background-image: url(../images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 140vh;
+    }
+    .main-section {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10vw;
+        height: 60vh;
+    }
+    .logo {
+        background-image: url(../images/logo.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 40%;
+        height: 50px;
+    }
+    .mockups{
+        background-image: url(../images/illustration-mockups.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 90%;
+        height: 210px;
+        margin: 40px auto;
+    }
+    .info-section{
+        width: 88%;
+        height: 70vh;
+        margin: 0 auto;
+    }
+    .info-section h1 {
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+    }
+    .info-section p {
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        width: 92%;
+        margin: 20px auto;
+        text-align: center;
+    }
+    .info-section button {
+        display: block;
+        width: 60%;
+        height: 40px;
+        border-radius: 20px;
+        margin: 0 auto;
+        outline: none;
+        border-style: none;
+    }
+    .social-icons {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        margin: 60px auto;
+    } 
+    i.fab {
+        border: 1px solid white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 28px;
+        vertical-align: middle;
+        color: #fff;
+    }
+
+    .fb:hover i, .tw:hover i, .in:hover i {
+        color: var(--magenta);
+        border: 1px solid var(--magenta);
+        transition: all .2s ease-in-out;
+    }
+}
+
+@media screen and (min-width:376px) and (max-width:1440px){
+
+    .container {
+        display: flex;
+        background-image: url(../images/bg-desktop.svg);
+    }
+
+    .main-section {
+        height: 100vh;
+        width: 58%;
+        padding: 50px;
+    }
+
+    .main-section .logo{
+        background-image: url(../images/logo.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 40%;
+        height: 40px;
+    }
+
+    .main-section .mockups {
+        background-image: url(../images/illustration-mockups.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 610px;
+        margin: 100px 0px;
+    }
+
+    .info-section {
+        height: 100vh;
+        width: 42%;
+    }
+    .info-section h1 {
+        margin: 32vh 0 0 0;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 1px;
+        font-size: 2em;
+        font-weight: 600;
+        width: 70%;
+        text-align: start;
+    }
+    .info-section p {
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        width: 80%;
+        margin: 20px 0;
+    }
+    .info-section button {
+        display: block;
+        width: 30%;
+        height: 50px;
+        border-radius: 50px;
+        color: var(--violet);
+        box-shadow: 10px 10px 19px -5px rgba(0,0,0,0.6);
+        outline: none;
+        border-style: none;
+    }
+
+    .info-section button:hover{
+        background-color: var(--magenta);
+        transition: all .2s ease-in-out;
+        transform: scale(1.1)
+    }
+    .info-section .social-icons {
+        display: flex;
+        position: absolute;
+        right: 3%;
+        bottom: 5%;
+    }
+
+    i.fab {
+        border: 1px solid white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 28px;
+        vertical-align: middle;
+        color: #fff;
+        margin: 0px 5px;
+    }
+
+    .fb:hover i, .tw:hover i, .in:hover i {
+        color: var(--magenta);
+        border: 1px solid var(--magenta);
+        transition: all .2s ease-in-out;
+    }
+
+}
